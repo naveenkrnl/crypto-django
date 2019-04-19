@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block content %}
+        {% if a %}
+        <h3>Enter a valid Crypto Symbol in the form above......</h3>
+        {% else %}
+
+        {% if crypto.Response %}
+            Sorry that symbol doesn't exist. Please Try Again....
+        {% endif %}
+        {% for key,value in crypto.DISPLAY.items %}
+        <div class="jumbotron">
+            <h1 class="display-4">{{ key }}</h1>
+            <strong>Price :</strong>{{ value.USD.PRICE }}<br/>
+            <strong>Daily High :</strong>{{ value.USD.HIGHDAY }}<br/>
+            <strong>Daily Low :</strong>{{ value.USD.LOWDAY }}<br/>
+            <strong>MarketCap :</strong>{{ value.USD.MKTCAP }}<br/>
+        </div>
+        <hr><br/>
+        {% endfor %}  
+        {% endif %}   
+{% endblock %}
+
+
+
+
+
