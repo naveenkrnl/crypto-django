@@ -1,9 +1,14 @@
 Crypto News Network
 A simple app where you get information about all Crypto Currencies and latest articles simultaneously
 
+
+Demo - 
+
+<img src='https://raw.githubusercontent.com/naveenkrnl/crypto-django/master/new.png'>
+
+
+
 To download the project right on your computer Download the zip file
-
-
 
 From Home Directory run command
 <pre>
